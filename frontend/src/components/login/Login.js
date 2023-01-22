@@ -8,6 +8,7 @@ import { userRequest } from "../../axios";
 
 const Login = () => {
   const { user, setUser } = useContext(UserContext);
+  const [loading,setLoading] = useState(false);
   const [details, setDetails] = useState({
     email: "",
     password: "",
@@ -22,7 +23,7 @@ const Login = () => {
     console.log("click");
     e.preventDefault();
     setErrors(errors);
-
+    setLoading(true)
     try {
       const data = await userRequest.post("signin", { email: details.email, password: details.password }, { withCredentials: true }).then(res => res.data)
       // await fetch("http://localhost:5000/signin", {
@@ -37,8 +38,9 @@ const Login = () => {
 
       // const data = await res.json();
       // console.log(details.email);
-      console.log('*********')
-       console.log(data._doc)
+      // console.log('*********')
+      //  console.log(data._doc)
+      setLoading(false)
       if (data.errors) {
         console.log(data.errors);
         setErrors({
@@ -59,11 +61,12 @@ const Login = () => {
     e.preventDefault();
     // console.log("click");
     setErrors(errors);
+    setLoading(true)
     
     try {
       // console.log('first')
       const data = await userRequest.post("signin", { email: 'akshay@gmail.com', password: '123456' }, { withCredentials: true }).then(res => res.data)
-      
+      setLoading(false)
       if (data.errors) {
         console.log(data.errors);
         setErrors({
@@ -136,6 +139,7 @@ const Login = () => {
                       Login
                     </button>
                      <p style={{textAlign:'center',fontWeight:'bold'}}>OR</p>
+                    { loading && <div class="loader"></div>}
                      <button
                       className="btn btn-danger btn-login fw-bold my-3"
                       onClick={(e)=>testLogin(e)}

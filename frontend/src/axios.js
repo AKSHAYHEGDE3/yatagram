@@ -1,7 +1,7 @@
 import Axios from 'axios'
 
 
-const BASE_URL="http://localhost:5000/"
+const BASE_URL="https://yatagram-server.onrender.com/"
 const TOKEN=localStorage.getItem("token")
 export const publicRequest= Axios.create({
  baseURL: BASE_URL

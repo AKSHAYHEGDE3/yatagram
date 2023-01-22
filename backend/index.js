@@ -30,7 +30,7 @@ let PORT =process.env.PORT||5000
 
 //MIDDLEWARE
 var corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'https://yatagram-6fe2f.web.app',
     credentials: true,
     optionsSuccessStatus: 200 // For legacy browser support
 }
