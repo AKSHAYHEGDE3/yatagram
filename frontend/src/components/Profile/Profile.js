@@ -32,7 +32,7 @@ const Profile = () => {
     },[user._id])
 
     const logout=()=>{
-        fetch("http://localhost:5000/logout",{method:"GET",credentials:"include"});
+        // fetch("http://localhost:5000/logout",{method:"GET",credentials:"include"});
         setUser(null)}
     return (
         <div>
