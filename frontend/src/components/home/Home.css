@@ -1,0 +1,61 @@
+.homecontainer {
+  width: 40vw;
+  margin-top: 5rem;
+}
+
+.postbox {
+  background-color: #272727;
+  text-align: center;
+  border: 2px solid #fee600;
+  border-radius: 10px;
+}
+
+.postimage {
+  width: 100%;
+}
+
+.caption {
+  color: white;
+  text-align: left;
+}
+
+.like {
+  width: 50%;
+}
+
+.like div {
+  font-size: 1.5rem;
+  color: #fee600;
+}
+
+.uname {
+  width: 100%;
+  color: #fee600;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.name_link {
+  text-decoration: none;
+  color: #fee600;
+}
+.name_link:hover {
+  color: crimson;
+}
+
+.addpost-form {
+  margin-top: 5em;
+}
+
+@media (min-width: 480px) and (max-width: 1025px) {
+  .homecontainer {
+    width: 100%;
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .homecontainer {
+    width: 100%;
+    margin-top: 5rem;
+  }
+}

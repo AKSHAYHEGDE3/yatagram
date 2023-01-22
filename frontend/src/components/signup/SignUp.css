@@ -1,0 +1,199 @@
+
+
+  .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .row-space {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  .col-2 {
+    width: -webkit-calc((100% - 30px) / 2);
+    width: -moz-calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
+  }
+  
+  @media (max-width: 767px) {
+    .col-2 {
+      width: 100%;
+    }
+  }
+
+  .page-wrapper {
+    min-height: 100vh;
+  }
+  
+  .hello {
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  /* ==========================================================================
+     #SPACING
+     ========================================================================== */
+  .p-t-100 {
+    padding-top: 100px;
+  }
+  
+  .p-t-130 {
+    padding-top: 90px;
+  }
+  
+  .p-t-180 {
+    padding-top: 180px;
+  }
+  
+  .p-t-20 {
+    padding-top: 20px;
+  }
+  
+  .p-t-15 {
+    padding-top: 15px;
+  }
+  
+  .p-t-10 {
+    padding-top: 10px;
+  }
+  
+  .p-t-30 {
+    padding-top: 30px;
+  }
+  
+  .p-b-100 {
+    padding-bottom: 100px;
+  }
+  
+  .m-r-45 {
+    margin-right: 45px;
+  }
+  
+  /* ==========================================================================
+     #WRAPPER
+     ========================================================================== */
+  .wrapper {
+    margin: 0 auto;
+  }
+  
+  .wrapper--w960 {
+    max-width: 960px;
+  }
+  
+  .wrapper--w780 {
+    max-width: 780px;
+  }
+  
+  .wrapper--w680 {
+    max-width: 680px;
+  }
+  
+  /* ==========================================================================
+     #BUTTON
+     ========================================================================== */
+  .signupbtn {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 50px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  }
+  
+  .btn--radius {
+    border-radius: 3px;
+  }
+  
+  .btn--radius-2 {
+    border-radius: 5px;
+  }
+
+  .btn--signup {
+    border-style: none;
+    background: #121212;
+  }
+  .btn--login{
+    border-style: none;
+    background: #121212;
+  }
+  
+  .btn--signup:hover{
+    color: black;
+    background: white;
+  }
+  .btn--login:hover {
+    color: black;
+    background: #ffffff;
+  }
+
+  /* ==========================================================================
+     #FORM
+     ========================================================================== */
+
+  .sinput--style-4 {
+    line-height: 50px;
+    background: #fafafa;
+    border-style: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .label {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .sinput-group {
+    position: relative;
+    margin-bottom: 22px;
+  }
+
+  /* ==========================================================================
+     #TITLE
+     ========================================================================== */
+  .title {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  
+  /* ==========================================================================
+     #CARD
+     ========================================================================== */
+  .card-4 {
+    margin-top: -70px;
+    background: #ffbc00;
+    border-radius: 1px;
+  }
+  
+  .card-4 .card-hello {
+    padding: 57px 65px;
+    padding-bottom: 65px;
+  }
+  
+  @media (max-width: 767px) {
+    .card-4 .card-hello {
+      padding: 50px 40px;
+    }
+  }
+  
